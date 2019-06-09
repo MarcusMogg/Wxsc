@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffaf50</color>
+    <color name="colorPrimaryDark">#ffa336</color>
+    <color name="colorAccent">#d8371b</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#C97150</color>
+    <color name="background">#FDFDFE</color>
+    <color name="fab">#fdad6e</color>
+    <color name="green">#8bfc80</color>
+    <color name="red">#ff4f46</color>
+    <color name="fab_china">#fc7762</color>
+    <color name="fbutton_default_color">#894028</color>
+    <color name="fbutton_default_shadow_color">#e18c26</color>
+    <color name="black">#000000</color>
+    <color name="blue">#96ceff</color>
+</resources>

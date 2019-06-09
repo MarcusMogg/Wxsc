@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="ImageViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">400dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:adjustViewBounds">false</item>
+    </style>
+
+    <style name="FABStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="RecIconStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/fab</item>
+    </style>
+
+
+    <style name="MusicButtonStyle">
+        <item name="android:layout_width">@dimen/music_button_size</item>
+        <item name="android:layout_height">@dimen/music_button_size</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="MusicBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:max">100</item>
+    </style>
+
+    <style name="SongTitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="MusicButtonStyle.CenterButtonStyle">
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <style name="westen_sw">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginStart">-59dp</item>
+        <item name="android:layout_marginLeft">-59dp</item>
+        <item name="android:layout_marginBottom">98dp</item>
+        <item name="android:layout_toEndOf">@+id/switchDish</item>
+        <item name="android:layout_toRightOf">@+id/switchDish</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="china_sw" parent="westen_sw">
+        <item name="android:layout_alignTop">@+id/title_text</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+</resources>

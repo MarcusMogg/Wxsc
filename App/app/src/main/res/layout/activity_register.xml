@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <test.com.fg.CustomView.TitleView
+            android:id="@+id/account"
+            title:title_name="闻香识菜"
+            title:title_text_color="@android:color/white"
+            title:title_text_size="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary"/>
+        <RelativeLayout
+            android:id="@+id/register_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="470dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="-5dp">
+
+            <RelativeLayout
+                android:id="@+id/username_layout"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:inputType="none"
+                    android:maxLength="20"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="60dp"
+                    android:hint="请输入用户名"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left|center_horizontal"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_user"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/password_layout"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/username_layout">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="60dp"
+                    android:hint="请输入密码"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left|center_horizontal"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/password"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/password_repeat_layout"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/password_layout">
+
+                <EditText
+                    android:id="@+id/password_repeat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="60dp"
+                    android:hint="请再次输入密码"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left|center_horizontal"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_repwd"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/email_layout"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_repeat_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="请输入邮箱"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="60dp"/>
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left|center_horizontal"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/email"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/message_layout"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp">
+
+
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:hint="请输入身高(cm)"
+                    android:inputType="number|numberDecimal"
+                    android:maxLength="7"/>
+
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginRight="35dp"
+                    android:hint="请输入体重(kg)"
+                    android:inputType="number|numberDecimal"
+                    android:maxLength="7"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/select_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message_layout"
+                android:paddingLeft="20dp"
+                android:paddingVertical="10dp">
+
+                <Button
+                    android:id="@+id/sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_circle_shape_another"
+                    android:onClick="dialog_2"
+                    android:text="请选择性别"
+                    android:textColor="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/sugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/sex"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toRightOf="@+id/sex"
+                    android:background="@drawable/button_circle_shape_another"
+                    android:onClick="dialog_2"
+                    android:text="是否高糖"
+                    android:textColor="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/fat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/sex"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toEndOf="@+id/sugar"
+                    android:layout_toRightOf="@+id/sugar"
+                    android:background="@drawable/button_circle_shape_another"
+                    android:onClick="dialog_2"
+                    android:text="是否高脂"
+                    android:textColor="@android:color/black"/>
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/button_circle_shape"
+                android:gravity="center"
+                android:text="提 交"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
